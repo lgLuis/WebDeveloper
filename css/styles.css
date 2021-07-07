@@ -34,6 +34,11 @@ h2{
 h3{
     font-size: 2.1rem;
 }
+p{
+    font-family: var(--fuenteTexto);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 
 /*HERO*/
 .hero{
@@ -56,4 +61,35 @@ h3{
 }
 .subtitulo{
     font-size: 1.6rem;
+}
+
+/*SERVICIOS*/
+.servicios{
+    text-align: center;
+    margin-top: 3rem;
+}
+.servicios h2 {
+    padding-bottom: .5rem;
+}
+.servicios h2::after{
+    height: .7rem;
+    width: 7rem;
+    background-color: var(--coral);
+    content: "";
+    display: block;
+    margin: 0 auto;
+
+}
+.servicios i{
+    font-size: 5rem;
+    color: var(--coral);
+}
+
+@media(min-width:768px){
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        
+    }
 }
