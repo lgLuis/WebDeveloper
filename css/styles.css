@@ -1,0 +1,36 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --fuentePpal:'Didact Gothic', sans-serif;
+    --fuenteTexto:'Lato', sans-serif;;
+    --blanco:#ffff;
+    --negro:#0000;
+    --azul:#14213d;
+    --naranja:#fca311;
+    --gris:#e5e5e5;
+    --coral:#e63946;
+}
+body{
+    font-family: var(--fuentePpal);
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 2.8rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2.1rem;
+}
