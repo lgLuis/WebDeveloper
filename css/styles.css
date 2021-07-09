@@ -90,6 +90,25 @@ p{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 2rem;
-        
     }
 }
+
+/* PORTAFOLIO */
+
+.elemento {
+    border-bottom: 2px solid var(--coral);
+    padding-bottom: 3rem;
+}
+
+@media(min-width:768px){
+    .listado{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        grid-auto-rows: max-content;        /*importate*/
+    }
+    .elemento:nth-child(3){
+        grid-row-end: span 2;               /*MUY importante*/
+    }
+}
+
